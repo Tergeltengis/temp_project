@@ -33,7 +33,6 @@
                 required
                 outlined
                 dense
-                
                 filled
                 :type="showPass ? 'text' : 'password'"
               ></v-text-field>
