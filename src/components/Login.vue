@@ -3,7 +3,7 @@
       <div class="forms-container">
         <div class="signin-signup">
            
-          <form action="#" class="sign-up-form">
+          <form action="#" class="sign-up-form" >
             <h2 class="title"><img src="../assets/logo.svg" /></h2>
             <div class="input-field">
               <v-icon>mdi-account</v-icon>
@@ -83,7 +83,6 @@ input {
   width: 100%;
   background-color: #fff;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .forms-container {
@@ -108,7 +107,7 @@ input {
 
 form {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   padding: 0rem 5rem;
@@ -196,6 +195,7 @@ form.sign-in-form {
   left: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+    border-radius: 25px;
 }
 
 .container:before {
@@ -293,13 +293,20 @@ form.sign-in-form {
 
 .right-panel {
   background-position: 50% 50%;
-  background-image: url(../assets/login-background-2.jpg);
+  background-image: url(../assets/login-background-1.jpg);
   background-size: cover;
-  
+ 
 }
+
+.checkbox {
+  margin-top: 10;
+  padding-top: 10;
+  padding-left: -15cm;
+}
+
 @media (max-width: 870px) {
   .container {
-    min-height: 800px;
+    min-height: 80vh;
     height: 100vh;
   }
   .signin-signup {
@@ -379,6 +386,7 @@ form.sign-in-form {
   }
   .container {
     padding: 1.5rem;
+    
   }
 
   .container:before {
@@ -392,9 +400,5 @@ form.sign-in-form {
   }
 }
 
-.checkbox {
-  margin-top: 0;
-  padding-top: 0;
-  padding-left: -5cm;
-}
+
 </style>

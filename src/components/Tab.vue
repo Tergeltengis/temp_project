@@ -3,7 +3,7 @@
    
 
     <v-tabs vertical>
-      <v-tab>
+      <v-tab class="tab">
         <li class="list">
         <img width="30px" src="../assets/users.svg" style="margin: 0px auto; display: block;" alt="">
        Хувь хүн
@@ -37,6 +37,7 @@
           
       </v-tab-item>
     </v-tabs>
+   
   </v-card>
  
 </template>
@@ -63,4 +64,13 @@ export default {
 .v-tabs--vertical > .v-tabs-bar .v-tab{
   height: 70px;
 }
+.v-tabs--vertical > .v-tabs-bar .v-tab:active{
+  color: green;
+}
+
+@media (max-width: 570px) {
+
+}
+
+
 </style>
