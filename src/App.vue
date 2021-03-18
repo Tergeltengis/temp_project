@@ -1,18 +1,18 @@
 <template>
   <v-app>
-      <Login/>
+      <Tab/>
   </v-app>
   
 </template>
 
 <script>
-import Login from './components/Login';
-
+// import Login from './components/Login';
+import Tab from './components/Tab'
 export default {
   name: 'App',
 
   components: {
-    Login
+    Tab
   },
 
      data () {
