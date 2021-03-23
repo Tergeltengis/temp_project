@@ -1,9 +1,11 @@
 <template>
    <div class="container sign-up-mode">
       <div class="forms-container">
+        <flag iso="us" class="language" />
         <div class="signin-signup">
            
           <form action="#" class="sign-up-form" >
+            
             <h2 class="title"><img src="../assets/logo.svg" /></h2>
             <div class="input-field">
               <v-icon>mdi-account</v-icon>
@@ -24,26 +26,24 @@
             ></v-checkbox>
             </div>
             <input type="submit" class="btn" value="Нэвтрэх" />
-         
-     
           </form>
-
-
         </div>
           
       </div>
 
       <div class="panels-container">
         <div class="panel left-panel">
-         
         </div>
         <div class="panel right-panel">
-         
         </div>
       </div>
     </div>
 </template>
 <script>
+import Vue from 'vue'
+import FlagIcon from 'vue-flag-icon'
+Vue.use(FlagIcon);
+
 export default {
 
   data: () => ({
@@ -93,6 +93,19 @@ input {
   left: 0;
 }
 
+
+
+.language::before {
+  
+  width: 50px;
+}
+.language {
+  left: -45%;
+  width: 50px;
+}
+
+
+
 .signin-signup {
   position: absolute;
   top: 50%;
@@ -107,7 +120,7 @@ input {
 
 form {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 0rem 5rem;
@@ -266,6 +279,7 @@ form.sign-in-form {
 
 .container.sign-up-mode .signin-signup {
   left: 25%;
+  top: 40%;
 }
 
 .container.sign-up-mode form.sign-up-form {
@@ -293,7 +307,7 @@ form.sign-in-form {
 
 .right-panel {
   background-position: 50% 50%;
-  background-image: url(../assets/login-background-1.jpg);
+  background-image: url(../assets/bg1.jpg);
   background-size: cover;
  
 }

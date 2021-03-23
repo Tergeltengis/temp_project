@@ -44,7 +44,7 @@
 
 <script>
 import Vuetify from 'vuetify'
-import Login from './Login'
+import Login from '../components/Login'
 export default {
 
   vuetify: new Vuetify(),
